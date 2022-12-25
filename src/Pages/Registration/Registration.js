@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { AuthProvider } from "../../AuthContext/AuthContext";
+import { toast } from "react-hot-toast";
 const Registration = () => {
   const { createUser } = useContext(AuthProvider);
   const { register, handleSubmit, reset } = useForm();
@@ -10,6 +11,7 @@ const Registration = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        toast.success("User Registration Successfully Done!");
         reset();
       })
       .then((err) => console.error(err));

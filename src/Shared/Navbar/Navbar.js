@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { BiCameraMovie } from "react-icons/bi";
+import { AuthProvider } from "../../AuthContext/AuthContext";
+import { toast } from "react-hot-toast";
 
 const Navbar = () => {
+  const { user, logout } = useContext(AuthProvider);
   const menuBar = (
     <>
       <li>
@@ -47,6 +50,13 @@ const Navbar = () => {
       </li>
     </>
   );
+  const handelLogOut = () => {
+    logout()
+      .then(() => {
+        toast.success("Logout successfully!");
+      })
+      .catch((err) => console.error(err));
+  };
   return (
     <div
       className="navbar"
@@ -89,12 +99,24 @@ const Navbar = () => {
         <ul className="menu menu-horizontal font-bold">{menuBar}</ul>
       </div>
       <div className="navbar-end">
-        <Link
-          to="/login"
-          className=" py-1 md:py-2 px-2 md:px-3 bg-green-500 hover:bg-green-700 text-white font-extrabold font-mono rounded-sm"
-        >
-          LOGIN
-        </Link>
+        <>
+          {user?.email ? (
+            <Link
+              to="/"
+              onClick={handelLogOut}
+              className=" py-1 md:py-2 px-2 md:px-3 bg-green-500 hover:bg-green-700 text-white font-extrabold font-mono rounded-sm"
+            >
+              LOGOUT
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              className=" py-1 md:py-2 px-2 md:px-3 bg-green-500 hover:bg-green-700 text-white font-extrabold font-mono rounded-sm"
+            >
+              LOGIN
+            </Link>
+          )}
+        </>
       </div>
     </div>
   );

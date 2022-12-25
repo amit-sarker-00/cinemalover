@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { AuthProvider } from "../../AuthContext/AuthContext";
 
@@ -10,6 +11,7 @@ const Login = () => {
     login(data.email, data.password).then((result) => {
       const user = result.user;
       console.log(user);
+      toast.success("Login Successfully!");
       reset();
     });
   };
@@ -20,13 +22,13 @@ const Login = () => {
         onSubmit={handleSubmit(handelRegister)}
       >
         <input
-          className="border bg-white text-gray-400 border-green-400 p-2 w-80"
+          className="border bg-white  border-green-400 p-2 w-80"
           {...register("email", { required: "Email is Required" })}
           placeholder="email"
         />
 
         <input
-          className="border bg-white text-gray-400 border-green-400 p-2 w-80 "
+          className="border bg-white border-green-400 p-2 w-80 "
           {...register("password", { required: "Password is Required" })}
           placeholder="password"
         />
