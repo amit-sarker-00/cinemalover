@@ -1,6 +1,8 @@
 import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
+import { BsFillCalendarDateFill } from "react-icons/bs";
+import { BiTimeFive } from "react-icons/bi";
 
 const Banner = () => {
   const bannerImg = [
@@ -18,10 +20,15 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="md:px-20 sm:px-10 px-5 py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center">
-      <div className="mx-auto text-white mb-20">
+    <div className="md:px-20 sm:px-10 px-5 py-8 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+      <div
+        className=" text-white mb-20 sm:py-10"
+        data-aos="fade-down"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
         <h4 className="text-xl text-green-500 font-extrabold ">Cinemaflx</h4>
-        <h1 className="md:text-6xl sm:text-4xl text-2xl font-extrabold my-5">
+        <h1 className="md:text-6xl text-4xl font-extrabold my-5">
           Cinema, <span className="text-green-500">Movie</span>
           <br /> TV Shows, & More.
         </h1>
@@ -36,12 +43,27 @@ const Banner = () => {
             <li>
               <p>Action, Comedy</p>
             </li>
-            <li>2022</li>
-            <li> 118 min</li>
+            <li className="flex items-center gap-1">
+              <p>
+                <BsFillCalendarDateFill className="w-4 h-4 text-green-500"></BsFillCalendarDateFill>{" "}
+              </p>
+              <p>2022</p>
+            </li>
+            <li className="flex items-center gap-1">
+              <p>
+                <BiTimeFive className="w-4 h-4 text-green-500"></BiTimeFive>
+              </p>
+              <p>128 min</p>
+            </li>
           </ul>
         </div>
       </div>
-      <div className="mx-auto">
+      <div
+        className="mb-5"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
         <Splide
           aria-label=""
           options={{
@@ -66,7 +88,7 @@ const Banner = () => {
             <SplideSlide key={banner.id}>
               <div>
                 <img
-                  className="h-96 sm:w-96 w-full align-top rounded-md"
+                  className="h-96 border-2 border-green-500 sm:w-96 w-full mx-auto rounded-md"
                   src={banner.image}
                   alt=""
                 />
