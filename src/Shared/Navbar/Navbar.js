@@ -48,7 +48,12 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar">
+    <div
+      className="navbar"
+      data-aos="fade-down"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -86,7 +91,7 @@ const Navbar = () => {
       <div className="navbar-end">
         <Link
           to="/login"
-          className=" py-1 md:py-2 px-2 md:px-3 bg-green-500 hover:bg-green-900 text-white font-extrabold font-mono rounded-sm"
+          className=" py-1 md:py-2 px-2 md:px-3 bg-green-500 hover:bg-green-700 text-white font-extrabold font-mono rounded-sm"
         >
           LOGIN
         </Link>

@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { AuthProvider } from "../../AuthContext/AuthContext";
 const Registration = () => {
-  const { register, handleSubmit } = useForm();
-  const handelRegister = (data) => console.log(data);
+  const { createUser } = useContext(AuthProvider);
+  const { register, handleSubmit, reset } = useForm();
+  const handelRegister = (data) => {
+    createUser(data.email, data.password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        reset();
+      })
+      .then((err) => console.error(err));
+  };
   return (
     <div className="bg-white rounded-md shadow-2xl py-12 w-96 mx-auto my-10">
       <form
