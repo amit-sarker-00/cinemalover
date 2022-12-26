@@ -44,7 +44,7 @@ const Registration = () => {
         />
 
         <button className="btn rounded-md p-2 w-80  bg-green-500 text-white font-bold hover:bg-green-400">
-          Login
+          Register
         </button>
         <p className="text-gray-500 text-sm font-bold">
           Already Have an Account ?

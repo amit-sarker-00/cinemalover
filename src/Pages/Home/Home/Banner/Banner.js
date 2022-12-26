@@ -3,7 +3,8 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { BsFillCalendarDateFill } from "react-icons/bs";
 import { BiTimeFive } from "react-icons/bi";
-
+import { FaPlay } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Banner = () => {
   const bannerImg = [
     {
@@ -56,6 +57,17 @@ const Banner = () => {
               <p>128 min</p>
             </li>
           </ul>
+        </div>
+        <div className="my-10 rounded-md ">
+          <div>
+            <p className="flex items-center w-44 justify-center  border-2 border-green-500 hover:bg-green-500 hover:text-white font-bold gap-1 py-2 px-3 ">
+              <FaPlay className="w-4 h-4"></FaPlay>
+
+              <Link to="/bannervideo">
+                <button className="">WATCH NOW</button>
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
       <div
