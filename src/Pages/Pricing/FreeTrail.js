@@ -10,7 +10,12 @@ const FreeTrail = () => {
         <p className="pt-2 pb-8 text-xl antialiased text-center text-green-500">
           Find out about events and other news
         </p>
-        <div className="flex flex-row">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="2000"
+          className="flex flex-row"
+        >
           <input
             type="text"
             placeholder="example@email.com"
