@@ -1,4 +1,5 @@
 import React from "react";
+import FreeTrail from "./FreeTrail";
 import PriceBanner from "./PriceBanner";
 import PricingCard from "./PricingCard";
 
@@ -7,6 +8,7 @@ const Pricing = () => {
     <div>
       <PriceBanner></PriceBanner>
       <PricingCard></PricingCard>
+      <FreeTrail></FreeTrail>
     </div>
   );
 };
