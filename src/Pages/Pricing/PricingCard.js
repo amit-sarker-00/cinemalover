@@ -48,7 +48,7 @@ const PricingCard = () => {
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="1000"
-        className="border-4 shadow-lg border-green-500 px-3 bg-white text-black font-bold rounded-md "
+        className="border-4 shadow-2xl border-green-500 px-3 bg-white text-black font-bold rounded-md "
       >
         <h1 className="font-bold text-green text-center my-4">STANDARD</h1>
         <div className="bg-green-500 py-5 my-5 w-24 text-white text-center mx-auto rounded-md">
