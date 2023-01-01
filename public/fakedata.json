@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Karthikeya 2",
+    "image": "https://i.ibb.co/Js71N03/images.jpg",
+    "duration": "120 min",
+    "describe": "A young man crashes a school play rehearsal to prevent a group of teachers and eccentric parents from expelling his girlfriend’s son.",
+    "likes": "1k",
+    "releasedDate": "Dec. 28, 2022"
+  },
+  {
+    "name": "7 Women and a Murder",
+    "image": "https://i.ibb.co/HCxC3VB/MV5-BN2-Fk-ODc4-Y2-Mt-Nz-Nk-ZC00-M2-I3-LWEx-NTMt-Yj-Ew-Y2-Ni-MDNm-Nzgy-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-Yz-O.jpg",
+    "duration": "120 min",
+    "describe": "7 Women and a Murder (2022) Seven Women & a Murder (2021) Seven Women and a Murder (2021) 7 Women & a Murder (2021) The Italian remake of Ozon’s “8 Women”. : 7 women find themselves dealing with a mystery killing. Who’s the killer and what are the motives of the murder?",
+    "likes": "2.5k",
+    "releasedDate": "Dec. 25, 2021",
+    "status": "recent"
+  },
+  {
+    "name": "Night Raiders",
+    "image": "https://i.ibb.co/dLW4Ljn/u-Ie-LL3-W3-S5i-Bfu7-MCc1ox-RLJz42-185x278.jpg",
+    "duration": "100 min",
+    "describe": "Night Riders (2021) The year is 2043. A military occupation controls disenfranchised cities in post-war North America. Children are property of the State. A desperate Cree woman joins an underground band of vigilantes to infiltrate a State children’s academy and get her daughter back. Night Raiders is a female-driven dystopian drama about resilience, courage and love.",
+    "likes": "3k",
+    "releasedDate": "Oct. 08, 2021",
+    "status": "recent"
+  },
+  {
+    "name": "The Doorman",
+    "image": "https://i.ibb.co/JFdqRKL/MV5-BYz-Ew-YTQ0-NWYt-ZTVj-YS00-NGNl-LWIw-MDct-Yj-A3-MDQ4-OWNi-Yj-Mx-Xk-Ey-Xk-Fqc-Gde-QXVy-MTkx-Nj-Uy.jpg",
+    "duration": "130 min",
+    "describe": "A former Marine turned doorman at a luxury New York City high-rise must outsmart and battle a group of art thieves and their ruthless leader — while struggling to protect her sister’s family. As the thieves become increasingly desperate and violent, the doorman calls upon her deadly fighting skills to end the showdown.",
+    "likes": "1.5k",
+    "releasedDate": "Oct. 01, 2020",
+    "status": "recent"
+  },
+  {
+    "name": "Kung-Fu Zohra",
+    "image": "https://i.ibb.co/Bt0jKdY/MV5-BZTc3-OTdk-ODQt-MTQ2-MS00-Mzg3-LTg2-ZDQt-Nz-Ex-ZDFl-OGRl-NWVm-Xk-Ey-Xk-Fqc-Gde-QXVy-NDU4-Mz-Q4-M.jpg",
+    "duration": "150 min",
+    "describe": "KungFu Zohra (2022) Kung Fu Zohra (2022) Zohra is convinced that separating from her husband Omar would break her little girl’s heart and so determines not to leave him despite the violence he metes out. Then she meets Chang Sue, the caretaker of the gym where she works to make ends meet. When she learns that he’s a kung fu master, Zohra asks him to teach her some self-defence basics…",
+    "likes": "1k",
+    "releasedDate": "Mar. 09, 2022",
+    "status": "recent"
+  },
+
+  {
+    "name": "Mayhem ",
+    "image": "https://i.ibb.co/JQ2j0y5/a9-YXJz-Lk-Fqb-JTTNHqe-Oc-HXg4o-Q-185x278.jpg",
+    "duration": "110 min",
+    "describe": "A virus spreads through an office complex causing white collar workers to act out their worst impulses.",
+    "likes": "1.5k",
+    "releasedDate": "Dec. 24, 2022",
+    "status": "recent"
+  },
+  {
+    "name": "The Amazing Maurice",
+    "image": "https://i.ibb.co/ChWcz6w/MV5-BOGMx-Yz-Nk-Mm-Qt-N2-I1-MS00-Njdl-LWE3-OTQt-OGJi-NWVi-MDZi-Y2-Rm-Xk-Ey-Xk-Fqc-Gde-QXVy-Mj-Mw-ODE.jpg",
+    "duration": "140 min",
+    "describe": "Every town on Discworld knows the stories about rats and pipers, and Maurice – a street wise tomcat – leads a band of educated ratty friends (and a stupid kid) on a nice little earner. Piper plus rats equals lots and lots of money. Until they run across someones playing a different tune. Now Maurice and his rats must learn a new concept: evil…",
+    "likes": "3.5k",
+    "releasedDate": "Dec. 16, 2021",
+    "status": "recent"
+  }
+]

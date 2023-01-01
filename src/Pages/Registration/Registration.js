@@ -23,22 +23,22 @@ const Registration = () => {
         onSubmit={handleSubmit(handelRegister)}
       >
         <input
-          className="border bg-white text-gray-400 border-green-400 p-2 w-80"
+          className="border bg-white text-gray-600 border-green-400 p-2 w-80"
           {...register("name", { required: "Name is Required" })}
           placeholder="name"
         />
         <input
-          className="border bg-white text-gray-400 border-green-400 p-2 w-80"
+          className="border bg-white text-gray-600 border-green-400 p-2 w-80"
           {...register("email", { required: "Email is Required" })}
           placeholder="email"
         />
         <input
-          className="border bg-white text-gray-400 border-green-400 p-2 w-80 "
+          className="border bg-white text-gray-600 border-green-400 p-2 w-80 "
           {...register("phone", { required: "Number is Required" })}
           placeholder="phone number"
         />
         <input
-          className="border bg-white text-gray-400 border-green-400 p-2 w-80"
+          className="border bg-white text-gray-600 border-green-400 p-2 w-80"
           {...register("password", { required: "Password is Required" })}
           placeholder="password"
         />

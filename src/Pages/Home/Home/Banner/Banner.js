@@ -21,9 +21,9 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="md:px-20 sm:px-10 px-5 py-8 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+    <div className="md:px-20 sm:px-10 px-5 py-8 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center -z-10">
       <div
-        className=" text-white mb-20 sm:py-10"
+        className=" text-white mb-20 sm:py-10   bg-gray-900"
         data-aos="fade-down"
         data-aos-delay="50"
         data-aos-duration="2000"
@@ -63,9 +63,9 @@ const Banner = () => {
             <p className="flex items-center w-44 justify-center  border-2 border-green-500 hover:bg-green-500 hover:text-white font-bold gap-1 py-2 px-3 ">
               <FaPlay className="w-4 h-4"></FaPlay>
 
-              <Link to="/bannervideo">
-                <button className="">WATCH NOW</button>
-              </Link>
+              <button className="">
+                <Link to="/bannervideo">WATCH NOW</Link>
+              </button>
             </p>
           </div>
         </div>

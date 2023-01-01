@@ -1,19 +1,30 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthProvider } from "../../AuthContext/AuthContext";
 
 const Login = () => {
-  const { login } = useContext(AuthProvider);
+  const { login, googleLogin } = useContext(AuthProvider);
   const { register, handleSubmit, reset } = useForm();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || "/";
   const handelRegister = (data) => {
     login(data.email, data.password).then((result) => {
       const user = result.user;
       console.log(user);
       toast.success("Login Successfully!");
+      navigate(from, { replace: true });
       reset();
     });
+  };
+  const handelGoogleLogin = () => {
+    googleLogin()
+      .then(() => {
+        navigate(from, { replace: true });
+      })
+      .catch((err) => console.error(err));
   };
   return (
     <div className=" bg-white rounded-md shadow-2xl py-12 w-96 mx-auto mt-10 ">
@@ -22,13 +33,13 @@ const Login = () => {
         onSubmit={handleSubmit(handelRegister)}
       >
         <input
-          className="border bg-white  border-green-400 p-2 w-80"
+          className="border bg-white text-gray-600  border-green-400 p-2 w-80"
           {...register("email", { required: "Email is Required" })}
           placeholder="email"
         />
 
         <input
-          className="border bg-white border-green-400 p-2 w-80 "
+          className="border bg-white text-gray-600 border-green-400 p-2 w-80 "
           {...register("password", { required: "Password is Required" })}
           placeholder="password"
         />
@@ -45,7 +56,10 @@ const Login = () => {
       </form>
       <div className="divider text-gray-600">OR</div>
       <div className="text-center">
-        <button className="btn rounded-md p-2 w-80 bg-green-500 text-white font-bold hover:bg-green-400">
+        <button
+          onClick={handelGoogleLogin}
+          className="btn rounded-md p-2 w-80 bg-green-500 text-white font-bold hover:bg-green-400"
+        >
           Login With Google
         </button>
       </div>

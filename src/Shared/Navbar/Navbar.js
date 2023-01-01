@@ -9,32 +9,32 @@ const Navbar = () => {
   const menuBar = (
     <>
       <li>
-        <Link className=" hover:text-green-500" to="/home">
+        <Link className=" md:hover:text-green-500" to="/home">
           HOME
         </Link>
       </li>
-      <li className=" hover:text-green-500" tabIndex={0}>
+      <li className=" md:hover:text-green-500" tabIndex={0}>
         <a>MOVIE</a>
         <ul className="p-2 bg-green-500 text-white border">
-          <li className="hover:bg-white hover:text-green-500">
-            <a>ALL MOVIES</a>
+          <li className="hover:bg-white text-sm hover:text-green-500">
+            <Link to="/allmovies">ALL MOVIES</Link>
           </li>
-          <li className="hover:bg-white hover:text-green-500">
+          <li className="md:hover:bg-white hover:text-green-500">
             <a>MOVIE DETAILS</a>
           </li>
         </ul>
       </li>
-      <li className=" hover:text-green-500">
+      <li className=" md:hover:text-green-500">
         <Link to="/shows">TV SHOWS</Link>
       </li>
 
-      <li className=" hover:text-green-500">
+      <li className=" md:hover:text-green-500">
         <Link to="/price">PRICING</Link>
       </li>
-      <li className=" hover:text-green-500">
+      <li className=" md:hover:text-green-500">
         <Link to="/blog">BLOG</Link>
       </li>
-      <li className=" hover:text-green-500">
+      <li className=" md:hover:text-green-500">
         <Link to="/contact">CONTACT</Link>
       </li>
       <li>
@@ -66,7 +66,7 @@ const Navbar = () => {
     >
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden z-50 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -83,7 +83,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-500 text-white font-bold rounded-box  border-2 "
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-green-500 z-50 text-white font-bold rounded-box text-sm  border-2 "
           >
             {menuBar}
           </ul>
@@ -95,8 +95,10 @@ const Navbar = () => {
           <Link to="/">CINEMA</Link>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal font-bold">{menuBar}</ul>
+      <div className="navbar-center hidden lg:flex ">
+        <ul className="menu menu-horizontal text-white font-bold text-sm ">
+          {menuBar}
+        </ul>
       </div>
       <div className="navbar-end">
         <>
