@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const AllMovies = () => {
   const [allMovies, setAllMovies] = useState([]);
@@ -22,7 +23,7 @@ const AllMovies = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             key={movies._id}
-            className=" xs:w-72  rounded-md dark:bg-gray-900 dark:text-gray-100 shadow-xl border border-gray-400 -z-50"
+            className=" xs:w-72  rounded-md dark:bg-gray-900 dark:text-gray-100 shadow-xl border border-gray-400"
           >
             <img
               src={movies.image}
@@ -31,19 +32,21 @@ const AllMovies = () => {
             />
             <div className="flex flex-col justify-between p-6 space-y-8">
               <div className="space-y-2">
-                <h2 className="text-xl font-semibold tracking-wide">
+                <h2 className="text-md font-semibold tracking-wide">
                   {movies?.name.slice(0, 15)}...
                 </h2>
                 <p className="dark:text-gray-100">
                   {movies?.describe.slice(0, 25)}...
                 </p>
               </div>
-              <button
-                type="button"
-                className="flex items-center justify-center w-full p-3  tracking-wide rounded-md bg-green-500 text-white font-bold"
-              >
-                Details
-              </button>
+              <Link to="/bannervideo">
+                <button
+                  type="button"
+                  className="flex items-center justify-center w-full p-3  tracking-wide rounded-md bg-green-500 text-white font-bold"
+                >
+                  Details
+                </button>
+              </Link>
             </div>
           </div>
         ))}

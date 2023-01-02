@@ -54,7 +54,7 @@ const RecentMovies = () => {
                 />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                   <div className="space-y-2">
-                    <h2 className="text-xl font-semibold tracking-wide">
+                    <h2 className="text-md font-semibold tracking-wide">
                       {movies?.name.slice(0, 11)}...
                     </h2>
                     <p className="dark:text-gray-100 text-xs">

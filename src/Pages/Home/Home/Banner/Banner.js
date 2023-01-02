@@ -21,7 +21,7 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="md:px-20 sm:px-10 px-5 py-8 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center -z-10">
+    <div className="md:px-20 sm:px-10 px-5 py-8 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center">
       <div
         className=" text-white mb-20 sm:py-10   bg-gray-900"
         data-aos="fade-down"
@@ -34,7 +34,7 @@ const Banner = () => {
           <br /> TV Shows, & More.
         </h1>
         <div>
-          <ul className="flex items-center font-bold gap-5  flex-wrap">
+          <ul className="flex items-center font-bold gap-5  flex-wrap ">
             <li>
               <p className="px-1 rounded-sm bg-green-500 text-white">SD</p>
             </li>

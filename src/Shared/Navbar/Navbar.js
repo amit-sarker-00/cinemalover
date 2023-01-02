@@ -58,15 +58,10 @@ const Navbar = () => {
       .catch((err) => console.error(err));
   };
   return (
-    <div
-      className="navbar"
-      data-aos="fade-down"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-    >
+    <div className="navbar">
       <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden z-50 ">
+        <div className="dropdown ">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden  ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
