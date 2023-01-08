@@ -10,6 +10,8 @@
     "aos": "^2.3.4",
     "daisyui": "^2.46.0",
     "firebase": "^9.15.0",
+    "flowbite": "^1.6.0",
+    "flowbite-react": "^0.3.7",
     "react": "^18.2.0",
     "react-hook-form": "^7.41.1",
     "react-hot-toast": "^2.4.0",

@@ -11,6 +11,7 @@ import Registration from "../Pages/Registration/Registration";
 import Shows from "../Pages/Shows/Shows";
 import ErrorPage from "../Shared/ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
+import MovieDetails from "../Pages/MovieDetails/MovieDetails";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ export const router = createBrowserRouter([
       { path: "/register", element: <Registration></Registration> },
       { path: "/login", element: <Login></Login> },
       { path: "/bannervideo", element: <BannerVideo></BannerVideo> },
+      { path: "/details/:id", element: <MovieDetails></MovieDetails> },
       {
         path: "/price",
         element: (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const AllMovies = () => {
   const [allMovies, setAllMovies] = useState([]);
@@ -8,14 +8,10 @@ const AllMovies = () => {
       .then((res) => res.json())
       .then((data) => {
         setAllMovies(data);
-        console.log(data);
       });
   }, []);
   return (
     <div className="px-3 py-10 sm:p-16">
-      <div>
-        <h1 className="text-xl font-bold ">Top Products</h1>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
         {allMovies?.map((movies) => (
           <div
@@ -39,7 +35,7 @@ const AllMovies = () => {
                   {movies?.describe.slice(0, 25)}...
                 </p>
               </div>
-              <Link to="/bannervideo">
+              <Link to={`/details/${movies._id}`}>
                 <button
                   type="button"
                   className="flex items-center justify-center w-full p-3  tracking-wide rounded-md bg-green-500 text-white font-bold"

@@ -21,15 +21,15 @@ const Banner = () => {
     },
   ];
   return (
-    <div className="md:px-20 sm:px-10 px-5 py-8 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center">
+    <div className="md:px-20 sm:px-10 px-5 py-4 sm:py-20 grid grid-cols-1 md:grid-cols-2 items-center justify-center">
       <div
-        className=" text-white mb-20 sm:py-10   bg-gray-900"
+        className=" text-white md:mb-20 sm:py-10 py-0  bg-gray-900 "
         data-aos="fade-down"
         data-aos-delay="50"
         data-aos-duration="2000"
       >
         <h4 className="text-xl text-green-500 font-extrabold ">Cinemaflx</h4>
-        <h1 className="md:text-6xl text-4xl font-extrabold my-5">
+        <h1 className="md:text-6xl text-2xl font-extrabold my-3">
           Cinema, <span className="text-green-500">Movie</span>
           <br /> TV Shows, & More.
         </h1>
@@ -58,7 +58,7 @@ const Banner = () => {
             </li>
           </ul>
         </div>
-        <div className="my-10 rounded-md ">
+        <div className="sm:my-10 my-5 rounded-md ">
           <div>
             <p className="flex items-center w-44 justify-center  border-2 border-green-500 hover:bg-green-500 hover:text-white font-bold gap-1 py-2 px-3 ">
               <FaPlay className="w-4 h-4"></FaPlay>
@@ -71,7 +71,7 @@ const Banner = () => {
         </div>
       </div>
       <div
-        className="mb-5"
+        className="sm:mb-5"
         data-aos="fade-up"
         data-aos-delay="50"
         data-aos-duration="2000"
@@ -100,7 +100,7 @@ const Banner = () => {
             <SplideSlide key={banner.id}>
               <div>
                 <img
-                  className="h-96 border-2 border-green-500 sm:w-96 w-full mx-auto rounded-md"
+                  className="sm:h-96  sm:w-96 w-80 mx-auto rounded-md"
                   src={banner.image}
                   alt=""
                 />

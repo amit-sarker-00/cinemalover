@@ -7,37 +7,37 @@ const ContactMe = () => {
         <div className="flex justify-center items-center">
           <img
             className="w-96 "
-            src="https://i.ibb.co/gJN3yF9/sammy-line-service-support-3.png"
+            src="https://i.ibb.co/6JgSMcN/output-onlinegiftools.gif"
             alt=""
           />
         </div>
 
         <div className="mb-5">
           <div className=" text-white mb-20 sm:py-10">
-            <div className="shadow-2xl border border-green-500  py-12 w-96 mx-auto mt-10">
+            <div className="shadow-2xl border border-white  py-12 w-96 mx-auto mt-10">
               <form
                 action="https://formsubmit.co/7c49516f9b535e0508058b9b3970eaf6"
                 method="POST"
                 className=" flex flex-col gap-4 items-center justify-center "
               >
                 <input
-                  className="border border-green-500 p-2 w-80"
+                  className="border border-white bg-gray-700 p-2 w-80"
                   placeholder="name"
                   name="name"
                 />
 
                 <input
-                  className="border border-green-500 p-2 w-80 "
+                  className="border border-white bg-gray-700 p-2 w-80 "
                   placeholder="email"
                   name="email"
                 />
                 <textarea
-                  className="border border-green-500 p-2 w-80"
+                  className="border border-white bg-gray-700 text-white  p-2 w-80"
                   placeholder="message"
                   name="message"
                 ></textarea>
 
-                <button className="btn rounded-md p-2 w-80  bg-green-500 text-black font-bold hover:bg-green-500">
+                <button className="btn rounded-md p-2 w-80  bg-green-500 text-black font-bold hover:bg-green-400">
                   Submit
                 </button>
               </form>

@@ -2,9 +2,9 @@ import React from "react";
 
 const FreeTrail = () => {
   return (
-    <div className="w-full dark:bg-white shadow-lg border-2 border-green-400">
-      <div className="container flex flex-col flex-wrap content-center justify-center p-4 py-20 mx-auto md:p-10">
-        <h1 className="text-5xl antialiased font-semibold leading-none text-center text-green-500">
+    <div className=" w-full bg-white shadow-lg border-2 ">
+      <div className="mx-auto container flex flex-col flex-wrap content-center justify-center p-4 py-20  md:p-10">
+        <h1 className="text-2xl md:text-5xl antialiased font-bold sm:font-semibold leading-none text-center text-green-500">
           FREE TRAIL FOR 7 DAYS!
         </h1>
         <p className="pt-2 pb-8 text-xl antialiased text-center text-green-500">
@@ -19,7 +19,7 @@ const FreeTrail = () => {
           <input
             type="text"
             placeholder="example@email.com"
-            className="w-3/5 p-3 rounded-l-lg sm:w-2/3"
+            className="w-3/5 p-3 rounded-l-lg sm:w-2/3 text-black font-semibold"
           />
           <button
             type="button"

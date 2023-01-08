@@ -1,5 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const RecentMovies = () => {
   const [recentMovies, setRecentMovies] = useState([]);
@@ -61,12 +62,14 @@ const RecentMovies = () => {
                       {movies?.describe.slice(0, 25)}...
                     </p>
                   </div>
-                  <button
-                    type="button"
-                    className="flex items-center justify-center w-full p-2  tracking-wide rounded-md dark:bg-green-500 text-white font-bold"
-                  >
-                    Details
-                  </button>
+                  <Link to={`/details/${movies._id}`}>
+                    <button
+                      type="button"
+                      className="bg-green-500 hover:bg-green-400 flex items-center justify-center w-full p-2  tracking-wide rounded-md dark:bg-green-500 text-white font-bold"
+                    >
+                      Details
+                    </button>
+                  </Link>
                 </div>
               </div>
             </SplideSlide>
